@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <main>
+    <div class="sign-up">
+      <p class="title">Stay updated!</p>
+      <p class="subtitle">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="list">
+        <div class="list-item">
+          <img src="assets\images\icon-list.svg" alt="icon-list">
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="list-item">
+          <img src="assets\images\icon-list.svg" alt="icon-list">
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="list-item">
+          <img src="assets\images\icon-list.svg" alt="icon-list">
+          <p>And much more!</p>
+        </div>
+      </div>
+      <form>
+        <div>
+          <div class="email">Email address</div>
+          <div class="error">Valid email required</div>
+        </div>
+        <input type="text" id="email" placeholder="email@company.com" spellcheck="false">
+        <button type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration sign-up">
+  </main>
+  <div class="success-message">
+    <img src="assets/images/icon-success.svg" alt="icon-success">
+    <p>Thanks for subscribing!</p>
+    <p>A confirmation email has been sent to<br><span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+    <button id="dismiss">Dismiss message</button>
+  </div>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/jere86">Jerko Sarić</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

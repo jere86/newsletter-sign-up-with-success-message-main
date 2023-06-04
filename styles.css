@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(234, 29%, 20%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 58rem;
+    height: 40rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+}
+
+.sign-up {
+    padding: 6.25rem 4rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    line-height: 1.4rem;
+    margin-bottom: 1.6rem;
+    color: hsl(235, 18%, 26%);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5.65rem;
+    color: hsl(235, 18%, 26%);
+    margin-bottom: 2.55rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+}
+
+.list-item img {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin: 0;
+    margin-right: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email {
+    width: max-content;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.error {
+    display: none;
+    width: max-content;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: hsl(4, 100%, 67%);
+}
+
+input {
+    margin: 0.7rem 0 1.5rem;
+    padding: 1.25rem 1.5rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(231, 7%, 60%);
+    font-size: 0.9rem;
+    color: hsl(234, 29%, 20%);
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: hsl(231, 7%, 60%);
+    opacity: 1;
+}
+
+input:focus {
+    outline: transparent;
+    border: 1px solid hsl(234, 29%, 20%);
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+button {
+    height: 3.5rem;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, hsl(346, 100%, 63%), hsl(4, 100%, 67%));
+    box-shadow: 0rem 1rem 1.5rem 0.5rem hsla(4, 100%, 67%, 0.3);
+}
+
+img {
+    width: 25rem;
+    height: 37rem;
+    margin: 1.5rem;
+    margin-left: 0;
+}
+
+.success-message {
+    display: none;
+    width: 31.5rem;
+    height: 32.5rem;
+    border-radius: 2.5rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3rem 4rem 4rem;
+}
+
+.success-message img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    margin-bottom: 2.25rem;
+}
+
+.success-message p:nth-child(2) {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.success-message p:nth-child(3) {
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.success-message span {
+    font-weight: 700;
+}
+
+.success-message button {
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
